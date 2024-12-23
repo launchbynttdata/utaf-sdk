@@ -1,11 +1,11 @@
 <header role="banner">
   {%- include launch-logo.html -%}
   <nav role="navigation">
-    <a href="{{ '/' | absolute_url }}" {% if page.url == "/" %}style="border-bottom:2px solid white;"{% endif %}>Home</a>
-    <a href="{{ '/docs' | absolute_url }}" {% if page.url == "/docs/" %}style="border-bottom:2px solid white;"{% endif %}>Documentation</a>
-    <a href="{{ '/learn' | absolute_url }}" {% if page.url == "/learn/" %}style="border-bottom:2px solid white;"{% endif %}>Learn</a>
-    <a href="{{ '/showcase' | absolute_url }}" {% if page.url == "/showcase/" %}style="border-bottom:2px solid white;"{% endif %}>Showcase</a>
-    <a href="{{ '/blog' | absolute_url }}" {% if page.url == "/blog/" %}style="border-bottom:2px solid white;"{% endif %}>Blog</a>
+    <a href="{{ '/' | relative_url }}" {% if page.url == "/" %}style="border-bottom:2px solid white;"{% endif %}>Home</a>
+    <a href="{{ '/docs' | relative_url }}" {% if page.url == "/docs/" %}style="border-bottom:2px solid white;"{% endif %}>Documentation</a>
+    <a href="{{ '/learn' | relative_url }}" {% if page.url == "/learn/" %}style="border-bottom:2px solid white;"{% endif %}>Learn</a>
+    <a href="{{ '/showcase' | relative_url }}" {% if page.url == "/showcase/" %}style="border-bottom:2px solid white;"{% endif %}>Showcase</a>
+    <a href="{{ '/blog' | relative_url }}" {% if page.url == "/blog/" %}style="border-bottom:2px solid white;"{% endif %}>Blog</a>
     {%- include github-logo.html -%}
   </nav>
 </header>
