@@ -1,0 +1,14 @@
+---
+layout: base
+title: UTAF Team Blog Archives
+category: blog
+class: blog
+type: list
+---
+
+{% for post in site.posts %}
+<p>
+  <a href="{{ post.url }}" class="post-date"> &raquo; {{ post.title }} </a>
+  - {{ post.date | date: "%B %e, %Y" }}
+</p>
+{% endfor %}

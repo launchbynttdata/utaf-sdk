@@ -1,0 +1,23 @@
+---
+layout: page
+markdown: 0
+---
+
+<section>
+  <div class="blog-container">
+    <section class="blog-content">
+      {% if page.markdown == 1 %} {{ content | markdownify }} {% else %} {{
+      content }} {% endif %}
+    </section>
+
+    {% if page.sidebar %}
+    <nav class="blog-sidebar">
+      <input id="q" placeholder="Search all articles" />
+
+      {% capture sidebar %}{% include {{ page.sidebar }} %}{% endcapture %} {%
+      if sidebarHTML %} {{ sidebar }} {% else %} {{ sidebar | markdownify }} {%
+      endif %}
+    </nav>
+    {% endif %}
+  </div>
+</section>

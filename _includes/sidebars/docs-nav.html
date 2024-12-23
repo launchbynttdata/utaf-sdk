@@ -1,0 +1,32 @@
+<!-- TODO: Look at using an actual menu component with a better user experience -->
+<ul>
+  <li class="docs-navigation-node collapsible open">
+    <a>Getting Started</a>
+    <ul>
+      <li><a href="/docs/" {% if page.url == "/docs/" %}class="current"{% endif %}>Introduction</a></li>
+      <li><a href="/docs/installation" {% if page.url == "/docs/installation" %}class="current"{% endif %}>Installation</a></li>
+      <li><a href="/docs/quick-start" {% if page.url == "/docs/quick-start" %}class="current"{% endif %}>Quick Start</a></li>
+    </ul>
+  </li>
+  <li class="docs-navigation-node collapsible">
+    <a>Building Your Application</a>
+    <ul>
+      <li><a href="/docs/intro" {% if page.url == "/docs/intro" %}class="current"{% endif %}>Introduction</a></li>
+      <li><a href="/docs/installation" {% if page.url == "/docs/installation" %}class="current"{% endif %}>Installation</a></li>
+      <li><a href="/docs/quick-start" {% if page.url == "/docs/quick-start" %}class="current"{% endif %}>Quick Start</a></li>
+    </ul>
+  </li>
+  <li class="docs-navigation-node collapsible">
+    <a>Guides</a>
+    <ul>
+      <li><a href="/docs/cli/" {% if page.url == "/docs/cli/" %}class="current"{% endif %}>Command-Line</a></li>
+      <li><a href="/docs/csharp/" {% if page.url == "/docs/csharp/" %}class="current"{% endif %}>C# Docs</a></li>
+      <li><a href="/docs/java/" {% if page.url == "/docs/java/" %}class="current"{% endif %}>Java Docs</a></li>
+      <li><a href="/docs/python/" {% if page.url == "/docs/python/" %}class="current"{% endif %}>Python Docs</a></li>
+      <li><a href="/docs/typescript/" {% if page.url == "/docs/typescript/" %}class="current"{% endif %}>Typescript Docs</a></li>
+    </ul>
+  </li>
+  <li class="docs-navigation-node">
+    <a href="/docs/supported-languages">Supported Languages</a>
+  </li>
+</ul>

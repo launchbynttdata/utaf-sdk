@@ -1,0 +1,11 @@
+<header role="banner">
+  {%- include launch-logo.html -%}
+  <nav role="navigation">
+    <a href="/" {% if page.url == "/" %}style="border-bottom:2px solid white;"{% endif %}>Home</a>
+    <a href="/docs/" {% if page.url == "/docs/" %}style="border-bottom:2px solid white;"{% endif %}>Documentation</a>
+    <a href="/learn/" {% if page.url == "/learn/" %}style="border-bottom:2px solid white;"{% endif %}>Learn</a>
+    <a href="/showcase/" {% if page.url == "/showcase/" %}style="border-bottom:2px solid white;"{% endif %}>Showcase</a>
+    <a href="/blog/" {% if page.url == "/blog/" %}style="border-bottom:2px solid white;"{% endif %}>Blog</a>
+    {%- include github-logo.html -%}
+  </nav>
+</header>

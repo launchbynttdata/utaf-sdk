@@ -1,0 +1,13 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="L-Mark" clip-path="url(#clip0_440_931)">
+<g id="Icon">
+<path d="M8 0H18C21.3137 0 24 2.68629 24 6V16H34C37.3137 16 40 18.6863 40 22V32H32V24H16V8H8V0Z" fill="white"/>
+<path d="M8 32H32V40H6C2.68629 40 0 37.3137 0 34V8H8V32Z" fill="white"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_440_931">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>

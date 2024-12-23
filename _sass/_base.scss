@@ -1,0 +1,369 @@
+/**
+ * Reset some basic elements
+ */
+blockquote,
+body,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+ol,
+p,
+pre,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Basic styling
+ */
+html {
+  font-family: $base-font-family;
+  height: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/**
+ * Links
+ */
+a {
+  background-color: $background-color;
+  color: $text-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+article {
+  display: block;
+}
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height}
+    $base-font-family;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  justify-content: space-between;
+  min-height: 100vh;
+  overflow: visible;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  -webkit-font-feature-settings: "kern" 1;
+  -webkit-text-size-adjust: 100%;
+}
+
+details {
+  margin-top: 0;
+  margin-bottom: 0.5 * $spacing-unit;
+  padding-left: $spacing-unit;
+
+  summary {
+    font-weight: $font-weight-semibold;
+  }
+}
+
+footer {
+  padding: 1rem;
+  width: 100%;
+}
+
+/**
+ * Headings
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $launch-black;
+  display: block;
+  font-family: Outfit, sans-serif;
+  font-weight: $font-weight-semibold;
+  line-height: 120%;
+  margin-bottom: 0.5 * $spacing-unit;
+  margin-top: $spacing-unit;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: $font-weight-bold;
+  line-height: 110%;
+  margin: 0;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+  text-transform: none;
+}
+
+header {
+  align-content: center;
+  background-color: $launch-black;
+  border-bottom: 1px solid $launch-gray-dark;
+  color: $launch-white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.25rem 2rem;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 9999;
+
+  > a {
+    background-color: $text-color;
+    color: $background-color;
+  }
+}
+
+main {
+  margin-top: 80px;
+}
+
+aside,
+nav {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-wrap: nowrap;
+  grid-column-gap: 1.5rem;
+  justify-content: flex-end;
+
+  > a {
+    background-color: $text-color;
+    color: $background-color;
+    font-size: $base-font-size;
+    font-weight: $font-weight-semibold;
+  }
+}
+
+p {
+  color: $launch-black;
+  margin-bottom: 0.5 * $spacing-unit;
+  margin-top: 0;
+}
+
+section {
+  padding: 1rem;
+  width: 100%;
+}
+
+/**
+ * Lists
+ */
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0.5 * $spacing-unit;
+  padding-left: $spacing-unit;
+}
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+  background-color: $launch-gray-lighter;
+  border: 1px solid $launch-gray;
+  border-radius: 0.2rem;
+}
+
+code {
+  padding: 5px 5px;
+}
+
+pre {
+  margin: 0.5 * $spacing-unit;
+  overflow-x: auto;
+  padding: 8px 12px;
+
+  > code {
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://cdn.prod.website-files.com/638e6b98608a733e5b0a33a2/63db750a8ec01f69e40dad4f_Outfit-ExtraLight.woff)
+    format(woff);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.alert {
+  @extend .banner;
+  background-color: $launch-yellow-light;
+  border-left: 0.25rem solid $launch-yellow;
+}
+
+.banner {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0.25rem;
+  justify-content: flex-start;
+  margin: $spacing-unit auto;
+  padding: 0.5 * $spacing-unit;
+
+  img {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+.blue-background {
+  background-color: $launch-blue;
+  color: $launch-white;
+}
+
+.button {
+  align-items: center;
+  border-radius: 1.5rem;
+  border-style: none;
+  cursor: pointer;
+  display: flex;
+  flex: none;
+  font-weight: $font-weight-bold;
+  height: 3rem;
+  justify-content: center;
+  min-width: 80px;
+  padding: 0.75rem 1.25rem;
+  text-align: center;
+  text-transform: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button-group {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+.container-large {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.25rem;
+  width: 100%;
+}
+
+.dark-background {
+  background-color: $launch-black;
+  color: $launch-white;
+}
+
+.heading-color-white {
+  color: $launch-white;
+}
+
+.hero-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem auto;
+  width: 100%;
+}
+
+.is-primary {
+  background-color: $launch-blue;
+  color: $launch-white;
+}
+
+.is-secondary {
+  background-color: $launch-white;
+  color: $launch-black;
+}
+
+.light-background {
+  background-color: $launch-gray;
+  color: $launch-black;
+}
+
+.page-title {
+  background-color: $launch-gray-lighter;
+  padding: 0.6em;
+}
+
+.spacer {
+  height: 2.75rem;
+}
+
+.tile {
+  align-items: center;
+  border-radius: 1.25rem;
+  border-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 1.25rem;
+  padding: 1.5rem;
+  text-align: center;
+  text-transform: none;
+  transition: background-color 0.3s ease-in-out;
+  width: 45%;
+}
+
+.tile-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0px;
+}
+
+.tile-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.tile-title {
+  // Placeholder
+}

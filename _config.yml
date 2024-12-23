@@ -1,0 +1,71 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values which you are expected to set up once and rarely edit after that.
+# If you find yourself editing this file very often, consider using Jekyll's data files feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use 'bundle exec jekyll serve'.
+# If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files, you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible in the templates via {{ site.myvariable }}.
+
+title: UTAF 2.0
+description: >- # this means to ignore newlines until "baseurl:"
+  The Unified Test Automation Framework (UTAF) is a development framework for building and
+  running code-based test automation including API, UI and End-to-End tests along with
+  Accessibility, Mobile, Performance and Security testing. The UTAF SDK contains a set of
+  libraries used to quickly create and extend automated test suites.
+
+author: Launch by NTT Data
+baseurl: "" # the subpath of your site, e.g. /blog
+email: sales@launch.com
+# This should be different when deployed
+url: "https://bookish-couscous-egz4pw3.pages.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Social media links
+facebook_username: NTTDATAServices
+github_username: NTTData-Launch
+instagram_username: nttdataplus
+linkedin_username: ntt-data-americas
+twitter_username: NTTDATAServices
+youtube_username: NTTDATAServices
+
+paginate: 8
+paginate_path: /blog/page:num
+permalink: /blog/:title.html
+
+# SASS Settings
+sass:
+  style: compressed
+
+# Build settings
+# The default path is './_site'. Changed to have a '.' prefix so it's clear(er) this is not source code.
+destination: ./.site
+# Removed original theme to use custom theme defined in this repo.
+# theme: minima
+plugins:
+  - jekyll-feed
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

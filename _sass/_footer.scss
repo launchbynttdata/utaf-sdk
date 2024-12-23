@@ -1,0 +1,31 @@
+.footer-column {
+  display: flex;
+  flex-direction: column;
+
+  > a {
+    background-color: transparent;
+  }
+}
+
+.footer-container {
+  @extend .container-large;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.footer-link {
+  background-color: $text-color;
+  color: $background-color;
+  font-size: $base-font-size;
+}
+
+.footer-title-link {
+  background-color: $text-color;
+  color: $background-color;
+  font-size: 1.25 * $base-font-size;
+  font-weight: $font-weight-bold;
+  line-height: 1;
+}

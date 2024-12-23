@@ -1,8 +1,9 @@
-<div style="align-items:center;display:flex;flex-direction:column;padding:20px 0px;width:100%">
-  <img loading="lazy" src="./assets/images/launch-by-ntt-data.png" alt="Launch by NTT Data" />
-</div>
-
-# UTAF SDK
+---
+layout: docs
+title: Introduction
+sidebar: sidebars/docs/intro.html
+sidebarHTML: true
+---
 
 The Unified Test Automation Framework (UTAF) is a development framework for building and running code-based test automation including API, UI and End-to-End tests along with Accessibility, Mobile, Performance and Security testing. The UTAF SDK contains a set of libraries used to quickly create and extend automated test suites.
 
@@ -18,9 +19,37 @@ The SDK is based on a set of Framework Extensions that build upon other automati
 
 Currently, the UTAF SDK supports these frameworks:
 
-| .NET                                        |     | Java                                          |     | JS/TS                                                       |     | Python                         |
-| ------------------------------------------- | --- | --------------------------------------------- | --- | ----------------------------------------------------------- | --- | ------------------------------ |
-| - RestSharp<br/>- SpecFlow<br/> <br/> <br/> |     | - RestAssured<br/>- Selenium<br/> <br/> <br/> |     | - Cypress<br/>- Playwright<br/>- TestCafe<br/>- WebDriverIO |     | - Robot<br/> <br/> <br/> <br/> |
+<details>
+  <summary>.NET</summary>
+  <ul>
+    <li>Playwright</li>
+    <li>RestSharp</li>
+    <li>SpecFlow</li>
+  </ul>
+</details>
+<details>
+  <summary>Java</summary>
+  <ul>
+    <li>Playwright</li>
+    <li>RestAssured</li>
+    <li>Selenium</li>
+  </ul>
+</details>
+<details>
+  <summary>Javascript/Typescript</summary>
+  <ul>
+    <li>Cypress</li>
+    <li>Playwright</li>
+    <li>TestCafe</li>
+    <li>WebDriverIO</li>
+  </ul>
+</details>
+<details>
+  <summary>Python</summary>
+  <ul>
+    <li>Robot</li>
+  </ul>
+</details>
 
 In addition to these core capabilities, the UTAF SDK includes a variety of Adapter Libraries that eliminate the need to learn and implement code required to integrate with the most common external dependencies. These include:
 
@@ -31,7 +60,13 @@ In addition to these core capabilities, the UTAF SDK includes a variety of Adapt
 
 ## Get Started
 
-[TODO: Generic info on "installing" the framework linking to a page that describes how to use the command-line tool as well as links to the framework-specific pages.]
+Create a new UTAF test suite with:
+
+```
+npx @launch-utaf/create-test-project
+```
+
+This will guide you through setting up the new test suite, asking what programming language and test automation framework you will use along with other prompts to configure the project as needed. Learn more [here](./docs/introduction/installation.md).
 
 ## Giving Feedback
 
@@ -51,7 +86,7 @@ Contributions to the UTAF SDK are currently limited to employees of Launch by NT
 
 Check [previous issues](https://github.com/launchbynttdata/utaf-sdk/issues) or [submit a new one](https://github.com/launchbynttdata/utaf-sdk/issues/new/choose).
 
-## Relates Projects
+## Related Projects
 
 ## License
 
