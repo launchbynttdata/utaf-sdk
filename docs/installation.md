@@ -10,7 +10,7 @@ sidebarHTML: true
 The UTAF command-line tool is used to create test suites for all supported languages and test automation frameworks.
 
 <div class="alert">
-  <img alt="warning" src="/assets/images/warning.png" /> 
+  <img alt="warning" src="./assets/images/warning.png" /> 
   <strong>Warning!</strong> You must have Node.js version 18 or later installed..
 </div>
 
